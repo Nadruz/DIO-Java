@@ -3,10 +3,14 @@ public class ResultadoEscolar {
         
         int nota = 6;
 
-        if (nota >= 7)
+        if (nota >= 7) // Condição simples
         System.out.println("Parabéns, você foi aprovado!");
 
-        else 
+        else if (nota >= 5 && nota < 7) // Condição encadeada
+        System.out.println("Recuperação");
+
+        else // Condição composta
         System.out.println("Reprovado");
     }
 }
+
